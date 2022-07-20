@@ -10,6 +10,7 @@
 import HeaderDischi from './components/HeaderDischi.vue';
 import MainDischi from './components/MainDischi.vue';
 import FooterDischi from './components/FooterDischi.vue';
+import 'bootstrap';
 
 
 
@@ -19,8 +20,6 @@ export default {
     HeaderDischi,
     MainDischi,
     FooterDischi,
-    
-
   }
 }
 </script>
