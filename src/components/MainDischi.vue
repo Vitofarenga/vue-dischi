@@ -1,6 +1,7 @@
 <template>
   <main>
-    <CardsList />
+    <CardsList v-for="(poster, index) in posters" :key="poster"
+    :poster="index"/>
   </main>
 </template>
 
@@ -20,14 +21,14 @@ export default {
         getMusic(){
            axios.get('https://flynn.boolean.careers/exercises/api/array/music')
            .then((result) =>{
-               this.posters = result.data.results;
+               this.posters = result.data.response;
                console.log(this.posters)
            })
         },
-        created(){
+    },
+    created(){
             this.getMusic();
         }
-    }
 
 }
 </script>
