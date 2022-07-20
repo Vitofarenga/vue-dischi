@@ -1,7 +1,7 @@
 <template>
   <main>
-    <CardsList v-for="(poster, index) in posters" :key="poster"
-    :poster="index"/>
+    <CardsList v-for="(poster, index) in posters" :key="index"
+    :poster="poster"/>
   </main>
 </template>
 
@@ -34,5 +34,11 @@ export default {
 </script>
 
 <style>
+main{
+    background-color: rgba(30,45,59,255);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
 </style>
